@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+
+    <string name="question1">Who painted the infamous \'Mona Lisa\'?</string>
+    <string name="question1_ans1">Michelangelo</string>
+    <string name="question1_ans2">Leonardo da Vinci</string>
+    <string name="question1_ans3">Pablo Picasso</string>
+    <string name="question1_ans4">Salvador Dalí</string>
+
+    <string name="question2">Which european country won the UEFA Euro 2016 football championship in France?</string>
+    <string name="question2_ans1">Spain</string>
+    <string name="question2_ans2">Germany</string>
+    <string name="question2_ans3">Portugal</string>
+    <string name="question2_ans4">France</string>
+
+    <string name="question3">Which company is currently responsible for the development of Android?</string>
+    <string name="question3_ans1">Google</string>
+    <string name="question3_ans2">Apple</string>
+    <string name="question3_ans3">Microsoft</string>
+    <string name="question3_ans4">Amazon</string>
+
+    <string name="question4">When did World War II come to an end?</string>
+    <string name="question4_ans1">1943</string>
+    <string name="question4_ans2">1940</string>
+    <string name="question4_ans3">1929</string>
+    <string name="question4_ans4">1945</string>
+
+    <string name="question5">What is the capital city of Hungary?</string>
+    <string name="question5_ans1">Bucharest</string>
+    <string name="question5_ans2">Sofia</string>
+    <string name="question5_ans3">Zagreb</string>
+    <string name="question5_ans4">Budapest</string>
+
+    <string name="question6">Pablo Picasso belongs to which of the following art movements?</string>
+    <string name="question6_ans1">Surrealism</string>
+    <string name="question6_ans2">Impressionism</string>
+    <string name="question6_ans3">Cubism</string>
+    <string name="question6_ans4">Realism</string>
+
+    <string name="question7">Which club is currently leading the UEFA club ranking?</string>
+    <string name="question7_ans1">Real Madrid CF</string>
+    <string name="question7_ans2">FC Bayern München</string>
+    <string name="question7_ans3">Club Atlético de Madrid</string>
+    <string name="question7_ans4">FC Barcelona</string>
+
+    <string name="question8">Who is the CEO and founder of Facebook?</string>
+    <string name="question8_ans1">Steve Jobs</string>
+    <string name="question8_ans2">Bill Gates</string>
+    <string name="question8_ans3">Larry Page</string>
+    <string name="question8_ans4">Mark Zuckerberg</string>
+
+    <string name="question9">What is the youngest independent country?</string>
+    <string name="question9_ans1">Timor-Leste</string>
+    <string name="question9_ans2">South Sudan</string>
+    <string name="question9_ans3">Montenegro</string>
+    <string name="question9_ans4">Serbia</string>
+
+    <string name="question10">In what continent is Mount Everest situated?</string>
+    <string name="question10_ans1">Africa</string>
+    <string name="question10_ans2">Asia</string>
+    <string name="question10_ans3">South America</string>
+    <string name="question10_ans4">Europe</string>
+
+</resources>

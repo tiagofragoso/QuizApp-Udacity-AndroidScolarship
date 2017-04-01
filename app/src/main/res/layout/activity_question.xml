@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiagofragoso.quizapp.QuestionActivity">
+
+    <RelativeLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/Arts"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/catIcon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/arts" />
+
+        <TextView
+            android:id="@+id/catName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:text="Arts" />
+
+    </RelativeLayout>
+
+
+    <View style="@style/separatorView"/>
+
+    <RelativeLayout
+        android:id="@+id/scoreLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/infotext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp"
+            android:text="You have a score of:" />
+
+        <LinearLayout
+            android:id="@+id/scoreLinLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/infotext"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="54sp"
+                tools:text="8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@android:color/black"
+                android:textSize="46sp" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="46sp"
+                android:textColor="@android:color/black"
+                tools:text="10" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scoreLinLayout"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="CONGRATULATIONS!" />
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/activity_question_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/activity_question1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/questionCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Question 1/10" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_marginRight="48dp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="16dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/questName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="18dp"
+                android:background="@android:color/white"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="12dp"
+                android:padding="24dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                tools:text="This is a really really really long long long long test question?" />
+
+            <TextView
+                android:id="@+id/questNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_question_arts"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                tools:text="1" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                style="@style/radioGroups"
+                android:layout_marginRight="17dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    style="@style/radioButtons"
+                    android:layout_marginBottom="10dp"
+                    android:text="Answer 1" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    style="@style/radioButtons"
+                    android:layout_marginTop="10dp"
+                    android:text="Answer 3" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                style="@style/radioGroups"
+                android:layout_marginLeft="17dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    style="@style/radioButtons"
+                    android:layout_marginBottom="10dp"
+                    android:text="Answer 2" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    style="@style/radioButtons"
+                    android:layout_marginTop="10dp"
+                    android:text="Answer 4" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/separatorView"/>
+
+    <LinearLayout
+        android:id="@+id/actionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/Arts"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/prevBut"
+            style="@style/actionButtons"
+            android:onClick="previous"
+            android:text="previous" />
+
+        <View
+            android:id="@+id/sep"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+        </View>
+
+        <TextView
+            android:id="@+id/nextBut"
+            style="@style/actionButtons"
+            android:onClick="next"
+            android:text="next" />
+
+        <TextView
+            android:id="@+id/finishButton"
+            style="@style/actionButtons"
+            android:onClick="finish"
+            android:text="finish"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/resetButton"
+            style="@style/actionButtons"
+            android:onClick="reset"
+            android:text="reset"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+

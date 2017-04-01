@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiagofragoso.quizapp.MainActivity">
+
+
+        <TextView
+            style="@style/mainActivityInfo"
+            android:textColor="#fafafa"
+            android:text="QUIZAPP"
+            android:background="@color/colorPrimaryDark"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"/>
+
+        <RelativeLayout
+            style="@style/catLayouts"
+            android:background="@color/Arts">
+
+            <TextView
+                android:text="Arts"
+                style="@style/LeftCatText"
+                />
+
+            <ImageView
+                android:src="@drawable/arts"
+                style="@style/LeftCatImage"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/catLayouts"
+            android:background="@color/Sports">
+
+            <TextView
+                android:text="Sports"
+                style="@style/LeftCatText"/>
+
+            <ImageView
+                style="@style/LeftCatImage"
+                android:src="@drawable/soccer" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/catLayouts"
+            android:background="@color/Technology">
+
+            <TextView
+                android:text="Technology"
+                style="@style/LeftCatText"/>
+
+            <ImageView
+                style="@style/LeftCatImage"
+                android:src="@drawable/tech" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/catLayouts"
+            android:background="@color/History">
+
+            <TextView
+                android:text="History"
+                style="@style/LeftCatText"/>
+
+            <ImageView
+                style="@style/LeftCatImage"
+                android:src="@drawable/history" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/catLayouts"
+            android:background="@color/Geography">
+
+            <TextView
+                android:text="Geography"
+                style="@style/LeftCatText"/>
+
+            <ImageView
+                style="@style/LeftCatImage"
+                android:src="@drawable/geography" />
+        </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/colorPrimaryDark"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/mainActivityInfo"
+        android:clickable="true"
+        android:onClick="listAct"
+        android:text="PLAY"
+        android:textColor="@color/colorPrimaryDark" />
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_arts"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tiagofragoso.quizapp.ArtsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="32dp"
+        android:layout_weight="2"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="This is a test question"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <RadioButton
+                android:padding="32dp"
+                android:text="Answer 1"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:id="@+id/radioButton1"/>
+
+            <RadioButton
+                android:padding="32dp"
+                android:text="Answer 2"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:id="@+id/radioButton2" />
+
+            <RadioButton
+                android:padding="32dp"
+                android:text="Answer 3"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:id="@+id/radioButton3" />
+
+            <RadioButton
+                android:padding="32dp"
+                android:text="Answer 4"
+                android:layout_gravity="fill"
+                android:layout_columnWeight="1"
+                android:id="@+id/radioButton4" />
+
+        </GridLayout>
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:layout_marginRight="20dp"
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="previous" />
+
+        <Button
+            android:layout_gravity="bottom"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="next"
+            android:id="@+id/button" />
+
+    </LinearLayout>
+
+</LinearLayout>
